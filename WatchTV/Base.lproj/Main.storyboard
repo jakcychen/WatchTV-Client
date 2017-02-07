@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="opg-9a-cA0">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--TVChannelListController-->
+        <scene sceneID="ryQ-2Z-3zH">
+            <objects>
+                <tableViewController restorationIdentifier="TVChannelListController" storyboardIdentifier="TVChannelListController" id="2tR-7h-q51" userLabel="TVChannelListController" customClass="TVChannelListController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" id="pZL-Pe-XWJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <connections>
+                            <outlet property="dataSource" destination="2tR-7h-q51" id="817-bO-y6C"/>
+                            <outlet property="delegate" destination="2tR-7h-q51" id="3cf-Fi-FiW"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Channels" id="mLW-jX-ppj"/>
+                    <connections>
+                        <outlet property="loadingItem" destination="gQA-IJ-3Zo" id="5Xn-Bg-SnD"/>
+                        <outlet property="reloadItem" destination="PME-KQ-l9w" id="7TB-UQ-EyS"/>
+                        <outlet property="searchBar" destination="Xiq-Co-yt0" id="lqE-5E-CPt"/>
+                        <segue destination="kXn-Gj-jhQ" kind="presentation" identifier="toTVPlayerViewController" id="qhe-hU-dLf"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pQV-Hg-0xe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchBar contentMode="redraw" placeholder="Search title / description" id="Xiq-Co-yt0">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="2tR-7h-q51" id="ad1-V8-ds1"/>
+                    </connections>
+                </searchBar>
+                <barButtonItem enabled="NO" style="plain" id="gQA-IJ-3Zo">
+                    <view key="customView" contentMode="scaleToFill" id="QwE-6g-T8Y">
+                        <rect key="frame" x="339" y="12" width="20" height="20"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="3uA-TT-ZMX">
+                                <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                <color key="color" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3uA-TT-ZMX" firstAttribute="centerY" secondItem="QwE-6g-T8Y" secondAttribute="centerY" id="Ovy-ff-sgT"/>
+                            <constraint firstItem="3uA-TT-ZMX" firstAttribute="centerX" secondItem="QwE-6g-T8Y" secondAttribute="centerX" id="SrO-U2-oyt"/>
+                        </constraints>
+                    </view>
+                </barButtonItem>
+                <barButtonItem title="Reload" id="PME-KQ-l9w">
+                    <connections>
+                        <action selector="reloadItemClicked:" destination="2tR-7h-q51" id="Jcn-u0-eB7"/>
+                    </connections>
+                </barButtonItem>
+            </objects>
+            <point key="canvasLocation" x="757" y="424"/>
+        </scene>
+        <!--TVSettingController-->
+        <scene sceneID="EWY-IF-BEB">
+            <objects>
+                <tableViewController restorationIdentifier="TVSettingController" storyboardIdentifier="TVSettingController" id="Dn4-RG-9Qh" userLabel="TVSettingController" customClass="TVSettingController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="60" sectionHeaderHeight="28" sectionFooterHeight="28" id="2Q4-Id-NeW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <view key="tableFooterView" contentMode="scaleToFill" id="Szm-rt-QUH">
+                            <rect key="frame" x="0.0" y="120" width="375" height="0.0"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                        <sections>
+                            <tableViewSection id="zBW-TH-Naf">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="2mq-ng-hVT" style="IBUITableViewCellStyleDefault" id="dhj-BL-uz0">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dhj-BL-uz0" id="99x-3K-snT">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="59"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Clean Cache" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2mq-ng-hVT">
+                                                    <rect key="frame" x="15" y="0.0" width="345" height="59"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="PQf-2t-Lul" style="IBUITableViewCellStyleDefault" id="Sz8-eX-sBe">
+                                        <rect key="frame" x="0.0" y="60" width="375" height="60"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Sz8-eX-sBe" id="1TN-tp-LwK">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="59"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Remove Favorite" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="PQf-2t-Lul">
+                                                    <rect key="frame" x="15" y="0.0" width="345" height="59"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="Dn4-RG-9Qh" id="WiH-oC-mAR"/>
+                            <outlet property="delegate" destination="Dn4-RG-9Qh" id="icR-UY-YKe"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Setting" id="VBG-Xg-jwI"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ktD-er-4At" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="756" y="1942"/>
+        </scene>
+        <!--TVFavoriteListController-->
+        <scene sceneID="cw0-63-2E4">
+            <objects>
+                <tableViewController restorationIdentifier="TVFavoriteListController" storyboardIdentifier="TVFavoriteListController" id="Xnp-Vo-EDf" userLabel="TVFavoriteListController" customClass="TVFavoriteListController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" id="9xh-sX-7O5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <connections>
+                            <outlet property="dataSource" destination="Xnp-Vo-EDf" id="tjC-gr-OQo"/>
+                            <outlet property="delegate" destination="Xnp-Vo-EDf" id="cLh-gs-vve"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Favorite" id="Sdq-6X-PAp"/>
+                    <connections>
+                        <segue destination="kXn-Gj-jhQ" kind="presentation" identifier="toTVPlayerViewController" id="nCy-Vi-cHS"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5rx-yK-9EH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="756" y="1181"/>
+        </scene>
+        <!--UITabBarController-->
+        <scene sceneID="Fie-Ec-Bnh">
+            <objects>
+                <tabBarController id="opg-9a-cA0" userLabel="UITabBarController" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="j7C-eL-dOF">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="cC7-We-0ch" kind="relationship" relationship="viewControllers" id="PIp-zc-69S"/>
+                        <segue destination="FzX-lA-fXi" kind="relationship" relationship="viewControllers" id="HD1-F2-hhg"/>
+                        <segue destination="LAs-45-4mb" kind="relationship" relationship="viewControllers" id="Di3-ae-fvd"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vnV-he-0dQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-946" y="1181"/>
+        </scene>
+        <!--TVPlayerViewController-->
+        <scene sceneID="ypE-Fc-MDG">
+            <objects>
+                <avPlayerViewController restorationIdentifier="TVPlayerViewController" storyboardIdentifier="TVPlayerViewController" videoGravity="AVLayerVideoGravityResizeAspect" id="kXn-Gj-jhQ" userLabel="TVPlayerViewController" customClass="TVPlayerViewController" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="af4-At-3zz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1642" y="825"/>
+        </scene>
+        <!--TVChannelListControllerNav-->
+        <scene sceneID="tk5-Ih-hgX">
+            <objects>
+                <navigationController id="cC7-We-0ch" userLabel="TVChannelListControllerNav" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Channels" image="Icon-list-n" id="Lsr-eT-fQL"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="sIX-Wy-CoV">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="2tR-7h-q51" kind="relationship" relationship="rootViewController" id="eme-FZ-3Nm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BhF-nP-m71" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-55" y="424"/>
+        </scene>
+        <!--TVFavoriteListControllerNav-->
+        <scene sceneID="GRo-Cb-Akk">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FzX-lA-fXi" userLabel="TVFavoriteListControllerNav" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Favorite" image="Icon-favorite-n" id="VPn-GO-h83"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Gbk-BO-e8j">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Xnp-Vo-EDf" kind="relationship" relationship="rootViewController" id="5w9-Yf-fl0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BaX-To-PX5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-55" y="1181"/>
+        </scene>
+        <!--TVSettingControllerNav-->
+        <scene sceneID="Wvo-LM-hMj">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xo1-kK-5Bl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController restorationIdentifier="TVSettingControllerNav" storyboardIdentifier="TVSettingControllerNav" automaticallyAdjustsScrollViewInsets="NO" id="LAs-45-4mb" userLabel="TVSettingControllerNav" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Setting" image="Icon-settings-n" id="MEs-Af-OE9"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="AsA-cd-yA9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Dn4-RG-9Qh" kind="relationship" relationship="rootViewController" id="9gn-fC-xBD"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="-55" y="1942"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Icon-favorite-n" width="25" height="25"/>
+        <image name="Icon-list-n" width="25" height="25"/>
+        <image name="Icon-settings-n" width="25" height="25"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="qhe-hU-dLf"/>
+    </inferredMetricsTieBreakers>
+</document>

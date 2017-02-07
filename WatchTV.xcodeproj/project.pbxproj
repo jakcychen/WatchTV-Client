@@ -1,0 +1,440 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0179C504A60359369693695F1C8BB573 /* WebImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5F2426437DFC23C5DCBF9430816A6BD4 /* WebImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0640B116E89CEA555E3C779A6CF7E1B9 /* TVAPIService.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A4EF7EF953E570C70C4250F4BDA132 /* TVAPIService.m */; };
+		1443F2801BA4B013BAB5316AD393CE9D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E79D86BDABCFF94C1E142C187C9B6A14 /* main.m */; };
+		1E43C9B0771159EBC0E696852FF39230 /* TVChannelListController+Delegations.m in Sources */ = {isa = PBXBuildFile; fileRef = 25EBD7F32E57085B5F97079AB3FF51E4 /* TVChannelListController+Delegations.m */; };
+		31DB45209F5C0127816F5C2A173E4E89 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2272466ADF9401DDC6128ACABAC689A /* LaunchScreen.storyboard */; };
+		366BD8E02A8121B9A1138B43AF74BFE5 /* SRPModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B9786A854FEE2E2CEEAF8B9DF8E1015 /* SRPModel.framework */; };
+		3A92ABD635B2B1B5AAAAB3F1260F24F6 /* SRPPlist.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7D6A0638625B70409C1A5F9C6D16B3F8 /* SRPPlist.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3C8DB7A6A95B0CF4A960F4FD8022EF69 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF9EA026126802C17CE9B7F462AAE9B1 /* Main.storyboard */; };
+		45734D13BAFDB3B719A1A841A68F3E27 /* TVChannelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E170E80FC886902CA218240F992607A6 /* TVChannelCell.m */; };
+		46A3276460867D498C6DADAF50A875E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9E3D196D4F32F6F15F9FAC92C073091 /* Assets.xcassets */; };
+		4F8FD72E55CF3565AF4AAA758B7F17FD /* TVChannelListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7259B9E46EE8FF98077CBE19CE6AA630 /* TVChannelListController.m */; };
+		561CD20311EFF891C00B16AF863CE0DF /* SRPPlist.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D6A0638625B70409C1A5F9C6D16B3F8 /* SRPPlist.framework */; };
+		62B41D564780C91EDB27C22FFB898E0D /* TVSettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B66F231B53BA613AC20A761D5E4E15E /* TVSettingController.m */; };
+		63E0B6CBE56098539A1E198EA7F412EA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = ACB4AF2EFD0AB75F4EA10636EA1B18B8 /* Localizable.strings */; };
+		8895419CEFFC81DF3DD2B58EDD752DAE /* TVFavoriteListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36B45BA5695341B96923597D9C8A7A79 /* TVFavoriteListController.m */; };
+		9836CE5DBB261E3B84D3EEA893B5D225 /* SRPModel.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8B9786A854FEE2E2CEEAF8B9DF8E1015 /* SRPModel.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A58F3F574CA68C1851E4DAE73DC4B9A5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B2AE0FF95CBC44234C216E8BBA959E80 /* AppDelegate.m */; };
+		A7166755E607A96A2F87F5E0F9084D45 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B0189E1C0520D701A2473EDE6027453 /* AVKit.framework */; };
+		C1BF165760814CE5DB3D007624CB0871 /* WebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F2426437DFC23C5DCBF9430816A6BD4 /* WebImage.framework */; };
+		CD8848597FD4D4AA28ADD4A00AC77763 /* TVChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = D2000F5F5C26ADF46C5521997709011D /* TVChannel.m */; };
+		FC8C85DD5B44BD27BE9880320E214AC6 /* TVPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB3B287D992BC8563BA8FC2451D0262F /* TVPlayerViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0D11C56206DB6216C950DC7176D41CF3 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9836CE5DBB261E3B84D3EEA893B5D225 /* SRPModel.framework in Embed Frameworks */,
+				3A92ABD635B2B1B5AAAAB3F1260F24F6 /* SRPPlist.framework in Embed Frameworks */,
+				0179C504A60359369693695F1C8BB573 /* WebImage.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		086CCBEEBE341019C35F025C9F6AE637 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0B66F231B53BA613AC20A761D5E4E15E /* TVSettingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVSettingController.m; sourceTree = "<group>"; };
+		0C56E29155CFB5A711A70C843468109E /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Main.strings"; sourceTree = "<group>"; };
+		13FC7BE01A708FF6283FF88D6331AE24 /* TVSettingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVSettingController.h; sourceTree = "<group>"; };
+		1AAC46E61B8114D9A4C48B1AC945288C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		25EBD7F32E57085B5F97079AB3FF51E4 /* TVChannelListController+Delegations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TVChannelListController+Delegations.m"; sourceTree = "<group>"; };
+		2B0189E1C0520D701A2473EDE6027453 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		2FE6AF855097A7E7C6C10001943D972C /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		36B45BA5695341B96923597D9C8A7A79 /* TVFavoriteListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVFavoriteListController.m; sourceTree = "<group>"; };
+		3E453AE9DB69C3D65B1734CCB6D58075 /* TVChannelListController+Delegations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TVChannelListController+Delegations.h"; sourceTree = "<group>"; };
+		4AD6F616B0A56E18D2E11DBE661CFA0A /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		51F6ED1F8EF15CD18CC04C142FB4A246 /* TVPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVPlayerViewController.h; sourceTree = "<group>"; };
+		5A68B42C77DD91C70DDAF2DC8839E2CC /* TVAPIService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVAPIService.h; sourceTree = "<group>"; };
+		5F2426437DFC23C5DCBF9430816A6BD4 /* WebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebImage.framework; path = Carthage/Build/iOS/WebImage.framework; sourceTree = "<group>"; };
+		71FB0E364E442B7416E6FF219D6CD30D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		7259B9E46EE8FF98077CBE19CE6AA630 /* TVChannelListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVChannelListController.m; sourceTree = "<group>"; };
+		7D6A0638625B70409C1A5F9C6D16B3F8 /* SRPPlist.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SRPPlist.framework; path = Carthage/Build/iOS/SRPPlist.framework; sourceTree = "<group>"; };
+		8B9786A854FEE2E2CEEAF8B9DF8E1015 /* SRPModel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SRPModel.framework; path = Carthage/Build/iOS/SRPModel.framework; sourceTree = "<group>"; };
+		8D3468AD4E6F2196D9A7B8FC0D7A0D8A /* TVFavoriteListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVFavoriteListController.h; sourceTree = "<group>"; };
+		B2AE0FF95CBC44234C216E8BBA959E80 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BFD9B2A214D14BF452D11A6E07836595 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C0A4EF7EF953E570C70C4250F4BDA132 /* TVAPIService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVAPIService.m; sourceTree = "<group>"; };
+		CBACCFA9F20DD878FAB92FEA30EA40C6 /* TVChannelCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVChannelCell.h; sourceTree = "<group>"; };
+		CEE20A1ED6152579FD47DCECFB2A4FFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D2000F5F5C26ADF46C5521997709011D /* TVChannel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVChannel.m; sourceTree = "<group>"; };
+		DB3B287D992BC8563BA8FC2451D0262F /* TVPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVPlayerViewController.m; sourceTree = "<group>"; };
+		E170E80FC886902CA218240F992607A6 /* TVChannelCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVChannelCell.m; sourceTree = "<group>"; };
+		E39DE84E38788984AE3D2CAAA4D6F38D /* TVChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVChannel.h; sourceTree = "<group>"; };
+		E79D86BDABCFF94C1E142C187C9B6A14 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E9E3D196D4F32F6F15F9FAC92C073091 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = WatchTV/Assets.xcassets; sourceTree = "<group>"; };
+		EF5B44BE86B36B99EC66AAE272944A04 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		FB46E1CBF8EFD78B277C7F0B9400D160 /* TVChannelListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVChannelListController.h; sourceTree = "<group>"; };
+		FCF4CD825A333C64A25FC547282941A9 /* WatchTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A88F72039656B99C6629EDB5F6588242 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7166755E607A96A2F87F5E0F9084D45 /* AVKit.framework in Frameworks */,
+				366BD8E02A8121B9A1138B43AF74BFE5 /* SRPModel.framework in Frameworks */,
+				561CD20311EFF891C00B16AF863CE0DF /* SRPPlist.framework in Frameworks */,
+				C1BF165760814CE5DB3D007624CB0871 /* WebImage.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4C503B1BAA235CB31F495B27961AADA0 = {
+			isa = PBXGroup;
+			children = (
+				FE45C1683298CFF6BEC6D425E86CB8B4 /* Frameworks */,
+				AC1D9806A25548DF3C4DC5689EC18903 /* Products */,
+				8C65B6CFCC791F60E4ECE7A071005A35 /* Supporting Files */,
+				85B5BFDD44D35E961FFA19933426014E /* WatchTV */,
+				E9E3D196D4F32F6F15F9FAC92C073091 /* Assets.xcassets */,
+			);
+			sourceTree = "<group>";
+		};
+		85B5BFDD44D35E961FFA19933426014E /* WatchTV */ = {
+			isa = PBXGroup;
+			children = (
+				086CCBEEBE341019C35F025C9F6AE637 /* AppDelegate.h */,
+				B2AE0FF95CBC44234C216E8BBA959E80 /* AppDelegate.m */,
+				B2272466ADF9401DDC6128ACABAC689A /* LaunchScreen.storyboard */,
+				EF9EA026126802C17CE9B7F462AAE9B1 /* Main.storyboard */,
+				5A68B42C77DD91C70DDAF2DC8839E2CC /* TVAPIService.h */,
+				C0A4EF7EF953E570C70C4250F4BDA132 /* TVAPIService.m */,
+				E39DE84E38788984AE3D2CAAA4D6F38D /* TVChannel.h */,
+				D2000F5F5C26ADF46C5521997709011D /* TVChannel.m */,
+				CBACCFA9F20DD878FAB92FEA30EA40C6 /* TVChannelCell.h */,
+				E170E80FC886902CA218240F992607A6 /* TVChannelCell.m */,
+				3E453AE9DB69C3D65B1734CCB6D58075 /* TVChannelListController+Delegations.h */,
+				25EBD7F32E57085B5F97079AB3FF51E4 /* TVChannelListController+Delegations.m */,
+				FB46E1CBF8EFD78B277C7F0B9400D160 /* TVChannelListController.h */,
+				7259B9E46EE8FF98077CBE19CE6AA630 /* TVChannelListController.m */,
+				8D3468AD4E6F2196D9A7B8FC0D7A0D8A /* TVFavoriteListController.h */,
+				36B45BA5695341B96923597D9C8A7A79 /* TVFavoriteListController.m */,
+				51F6ED1F8EF15CD18CC04C142FB4A246 /* TVPlayerViewController.h */,
+				DB3B287D992BC8563BA8FC2451D0262F /* TVPlayerViewController.m */,
+				13FC7BE01A708FF6283FF88D6331AE24 /* TVSettingController.h */,
+				0B66F231B53BA613AC20A761D5E4E15E /* TVSettingController.m */,
+			);
+			path = WatchTV;
+			sourceTree = "<group>";
+		};
+		8C65B6CFCC791F60E4ECE7A071005A35 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1AAC46E61B8114D9A4C48B1AC945288C /* Info.plist */,
+				ACB4AF2EFD0AB75F4EA10636EA1B18B8 /* Localizable.strings */,
+				E79D86BDABCFF94C1E142C187C9B6A14 /* main.m */,
+			);
+			name = "Supporting Files";
+			path = WatchTV;
+			sourceTree = "<group>";
+		};
+		AC1D9806A25548DF3C4DC5689EC18903 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FCF4CD825A333C64A25FC547282941A9 /* WatchTV.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FE45C1683298CFF6BEC6D425E86CB8B4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2B0189E1C0520D701A2473EDE6027453 /* AVKit.framework */,
+				8B9786A854FEE2E2CEEAF8B9DF8E1015 /* SRPModel.framework */,
+				7D6A0638625B70409C1A5F9C6D16B3F8 /* SRPPlist.framework */,
+				5F2426437DFC23C5DCBF9430816A6BD4 /* WebImage.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1A56095E683F4A182DF37BA9F22ECDC9 /* WatchTV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A258F66110481C85C24CB7CECD5761FB /* Build configuration list for PBXNativeTarget "WatchTV" */;
+			buildPhases = (
+				97DE5EA5AD2F69BE3E85FB17932B6C4E /* Sources */,
+				A88F72039656B99C6629EDB5F6588242 /* Frameworks */,
+				AAE050768C90F234DE39E5A3F44880FE /* Resources */,
+				0D11C56206DB6216C950DC7176D41CF3 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WatchTV;
+			productName = WatchTV;
+			productReference = FCF4CD825A333C64A25FC547282941A9 /* WatchTV.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5CAA3B03DF21A6115343B05679AEDD52 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = shinrenpan;
+				TargetAttributes = {
+					1A56095E683F4A182DF37BA9F22ECDC9 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = VZWPMD258L;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 591F8BD761B1A9EF38224D7413F1BD74 /* Build configuration list for PBXProject "WatchTV" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hant",
+			);
+			mainGroup = 4C503B1BAA235CB31F495B27961AADA0;
+			productRefGroup = AC1D9806A25548DF3C4DC5689EC18903 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1A56095E683F4A182DF37BA9F22ECDC9 /* WatchTV */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AAE050768C90F234DE39E5A3F44880FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46A3276460867D498C6DADAF50A875E6 /* Assets.xcassets in Resources */,
+				31DB45209F5C0127816F5C2A173E4E89 /* LaunchScreen.storyboard in Resources */,
+				63E0B6CBE56098539A1E198EA7F412EA /* Localizable.strings in Resources */,
+				3C8DB7A6A95B0CF4A960F4FD8022EF69 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		97DE5EA5AD2F69BE3E85FB17932B6C4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A58F3F574CA68C1851E4DAE73DC4B9A5 /* AppDelegate.m in Sources */,
+				0640B116E89CEA555E3C779A6CF7E1B9 /* TVAPIService.m in Sources */,
+				CD8848597FD4D4AA28ADD4A00AC77763 /* TVChannel.m in Sources */,
+				45734D13BAFDB3B719A1A841A68F3E27 /* TVChannelCell.m in Sources */,
+				1E43C9B0771159EBC0E696852FF39230 /* TVChannelListController+Delegations.m in Sources */,
+				4F8FD72E55CF3565AF4AAA758B7F17FD /* TVChannelListController.m in Sources */,
+				8895419CEFFC81DF3DD2B58EDD752DAE /* TVFavoriteListController.m in Sources */,
+				FC8C85DD5B44BD27BE9880320E214AC6 /* TVPlayerViewController.m in Sources */,
+				62B41D564780C91EDB27C22FFB898E0D /* TVSettingController.m in Sources */,
+				1443F2801BA4B013BAB5316AD393CE9D /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		ACB4AF2EFD0AB75F4EA10636EA1B18B8 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2FE6AF855097A7E7C6C10001943D972C /* Base */,
+				EF5B44BE86B36B99EC66AAE272944A04 /* en */,
+				4AD6F616B0A56E18D2E11DBE661CFA0A /* zh-Hant */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		B2272466ADF9401DDC6128ACABAC689A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEE20A1ED6152579FD47DCECFB2A4FFC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		EF9EA026126802C17CE9B7F462AAE9B1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BFD9B2A214D14BF452D11A6E07836595 /* Base */,
+				71FB0E364E442B7416E6FF219D6CD30D /* en */,
+				0C56E29155CFB5A711A70C843468109E /* zh-Hant */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		56C9938335112D56E1AAC4C3E807DBF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = VZWPMD258L;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = WatchTV/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shinrenpan.WatchTV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AD809E25FA610C45297F71B0A1B154DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C7FC67C5C321059777048ED8368A7800 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FAFC191633D4554621A5B5FA67242042 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = VZWPMD258L;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = WatchTV/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shinrenpan.WatchTV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		591F8BD761B1A9EF38224D7413F1BD74 /* Build configuration list for PBXProject "WatchTV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7FC67C5C321059777048ED8368A7800 /* Debug */,
+				AD809E25FA610C45297F71B0A1B154DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A258F66110481C85C24CB7CECD5761FB /* Build configuration list for PBXNativeTarget "WatchTV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAFC191633D4554621A5B5FA67242042 /* Debug */,
+				56C9938335112D56E1AAC4C3E807DBF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5CAA3B03DF21A6115343B05679AEDD52 /* Project object */;
+}

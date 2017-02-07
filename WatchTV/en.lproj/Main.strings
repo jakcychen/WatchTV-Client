@@ -1,0 +1,24 @@
+
+/* Class = "UITabBarItem"; title = "Channels"; ObjectID = "Lsr-eT-fQL"; */
+"Lsr-eT-fQL.title" = "Channels";
+
+/* Class = "UINavigationItem"; title = "Favorite"; ObjectID = "Sdq-6X-PAp"; */
+"Sdq-6X-PAp.title" = "Favorite";
+
+/* Class = "UITabBarItem"; title = "Favorite"; ObjectID = "VPn-GO-h83"; */
+"VPn-GO-h83.title" = "Favorite";
+
+/* Class = "UINavigationItem"; title = "Channels"; ObjectID = "mLW-jX-ppj"; */
+"mLW-jX-ppj.title" = "Channels";
+
+"PME-KQ-l9w.title" = "Reload";
+
+"Xiq-Co-yt0.placeholder" = "Search title / description";
+
+"MEs-Af-OE9.title" = "Setting";
+
+"2mq-ng-hVT.text" = "Clean Cache";
+
+"PQf-2t-Lul.text" = "Remove Favorite";
+
+"VBG-Xg-jwI.title" = "Setting";

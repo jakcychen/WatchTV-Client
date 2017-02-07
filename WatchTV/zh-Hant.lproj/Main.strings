@@ -1,0 +1,24 @@
+
+/* Class = "UITabBarItem"; title = "Channels"; ObjectID = "Lsr-eT-fQL"; */
+"Lsr-eT-fQL.title" = "頻道";
+
+/* Class = "UINavigationItem"; title = "Favorite"; ObjectID = "Sdq-6X-PAp"; */
+"Sdq-6X-PAp.title" = "收藏";
+
+/* Class = "UITabBarItem"; title = "Favorite"; ObjectID = "VPn-GO-h83"; */
+"VPn-GO-h83.title" = "收藏";
+
+/* Class = "UINavigationItem"; title = "Channels"; ObjectID = "mLW-jX-ppj"; */
+"mLW-jX-ppj.title" = "頻道";
+
+"PME-KQ-l9w.title" = "重新載入";
+
+"Xiq-Co-yt0.placeholder" = "搜尋名稱 / 描述";
+
+"MEs-Af-OE9.title" = "設定";
+
+"2mq-ng-hVT.text" = "清除暫存";
+
+"PQf-2t-Lul.text" = "移除收藏";
+
+"VBG-Xg-jwI.title" = "設定";
