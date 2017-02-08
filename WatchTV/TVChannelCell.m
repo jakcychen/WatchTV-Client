@@ -28,19 +28,14 @@
 #pragma mark - Public
 - (void)configureWithChannel:(TVChannel *)channel favorited:(BOOL)favorited
 {
-    NSString *name   = channel.name;
-    NSString *desc   = channel.desc;
-    NSString *imgURL = channel.imageUrl;
-    
-    self.textLabel.text       = name;
-    self.detailTextLabel.text = desc;
+    self.textLabel.text       = channel.name;
+    self.detailTextLabel.text = channel.desc;
 
     // 收藏按鈕顏色
-    self.accessoryView.tintColor = (favorited)
-    ? [UIColor redColor]
-    : [UIColor colorWithRed:0.0 green:122.0/255.0 blue:1.0 alpha:1.0];
+    self.accessoryView.tintColor =
+    favorited ? [UIColor redColor] : [UIColor colorWithRed:0.0 green:122.0/255.0 blue:1.0 alpha:1.0];
     
-    NSURL *imageURL = [NSURL URLWithString:imgURL];
+    NSURL *imageURL = [NSURL URLWithString:channel.imageUrl];
     UIImage *holder = [UIImage imageNamed:@"Image-Placeholder"];
     
     [self.imageView sd_setImageWithURL:imageURL placeholderImage:holder completed:^
@@ -50,11 +45,8 @@
         {
             CGFloat scale = image.size.width / 44.0;// 縮小成 44 x 44 比例
             
-            UIImage *scaleImage = scale > 1
-            ? [UIImage imageWithCGImage:image.CGImage scale:scale orientation:UIImageOrientationUp]
-            : image;
-            
-            self.imageView.image = scaleImage;
+            self.imageView.image =
+            (scale > 1) ? [UIImage imageWithCGImage:image.CGImage scale:scale orientation:UIImageOrientationUp] : image;
             
             [self setNeedsLayout];
         }

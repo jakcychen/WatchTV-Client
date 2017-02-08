@@ -5,9 +5,7 @@
 #import <UIKit/UIKit.h>
 
 
-/**
- *  收藏列表 ViewController.
- */
-@interface TVFavoriteListController : UITableViewController
+/// 收藏列表 ViewController.
+@interface TVFavoriteViewController : UITableViewController
 
 @end

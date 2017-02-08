@@ -5,9 +5,7 @@
 #import <SRPModel/SRPModel.h>
 
 
-/**
- *  頻道 model.
- */
+///頻道 model.
 @interface TVChannel : SRPModel
 
 
@@ -15,29 +13,19 @@
 /// @name Properties
 ///-----------------------------------------------------------------------------
 
-/**
- *  Content Id.
- */
+///Content Id.
 @property (nonatomic, readonly) NSString *contentId;
 
-/**
- *  描述.
- */
+/// 描述.
 @property (nonatomic, readonly) NSString *desc;
 
-/**
- *  圖片 URL.
- */
+/// 圖片 URL.
 @property (nonatomic, readonly) NSString *imageUrl;
 
-/**
- *  名稱.
- */
+/// 名稱.
 @property (nonatomic, readonly) NSString *name;
 
-/**
- *  Streaming Id.
- */
+/// Streaming Id.
 @property (nonatomic, readonly) NSString *streamingId;
 
 @end

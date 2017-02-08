@@ -4,6 +4,7 @@
 
 #import <AVFoundation/AVFoundation.h>
 
+#import "TVChannel.h"
 #import "TVPlayerViewController.h"
 
 
@@ -15,6 +16,11 @@
 @implementation TVPlayerViewController
 
 #pragma mark - LifeCycle
+- (void)dealloc
+{
+    [[AVAudioSession sharedInstance]setActive:NO error:nil];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -37,9 +43,17 @@
 #pragma mark 初始設置
 - (void)__setup
 {
+    [[AVAudioSession sharedInstance]setActive:YES error:nil];
+    [[AVAudioSession sharedInstance]setCategory:AVAudioSessionCategoryPlayback error:nil];
+    
     self.delegate = self;
-    NSURL *URL    = [NSURL URLWithString:_channelURL];
-    self.player   = [AVPlayer playerWithURL:URL];
+    
+    NSString *url =
+    [NSString stringWithFormat:@"http://watchtv.heroku.com/streaming?contentId=%@&streamingId=%@"
+    ,_channel.contentId, _channel.streamingId];
+    
+    NSURL *URL  = [NSURL URLWithString:url];
+    self.player = [AVPlayer playerWithURL:URL];
 }
 
 @end

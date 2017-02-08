@@ -1,6 +1,6 @@
 # WatchTV #
 
-[__Latest: 2.0.7__][Latest]
+[__Latest: 2.0.8__][Latest]
 
 觀看電視節目的 iOS universal app.  
 支援 **PictureInPicture**, **AirPlay**.

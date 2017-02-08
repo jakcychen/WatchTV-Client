@@ -1,24 +1,43 @@
+///-----------------------------------------------------------------------------
+/// TVChannelViewController
+///-----------------------------------------------------------------------------
 
-/* Class = "UITabBarItem"; title = "Channels"; ObjectID = "Lsr-eT-fQL"; */
+/* TVChannelViewController navigationItem title */
+"yI7-si-ZiI.title" = "頻道";
+
+/* TVChannelViewController tabBarItem title */
 "Lsr-eT-fQL.title" = "頻道";
 
-/* Class = "UINavigationItem"; title = "Favorite"; ObjectID = "Sdq-6X-PAp"; */
+/* TVChannelViewController reloadItem title */
+"XTo-LB-MbE.title" = "重新載入";
+
+/* TVChannelViewController searchBar placeholder text */
+"Bsf-Ev-CG3.placeholder" = "搜尋名稱 / 描述";
+
+
+///-----------------------------------------------------------------------------
+/// TVFavoriteViewController
+///-----------------------------------------------------------------------------
+
+/* TVFavoriteViewController navigationItem title */
 "Sdq-6X-PAp.title" = "收藏";
 
-/* Class = "UITabBarItem"; title = "Favorite"; ObjectID = "VPn-GO-h83"; */
+/* TVFavoriteViewController tabBarItem title */
 "VPn-GO-h83.title" = "收藏";
 
-/* Class = "UINavigationItem"; title = "Channels"; ObjectID = "mLW-jX-ppj"; */
-"mLW-jX-ppj.title" = "頻道";
 
-"PME-KQ-l9w.title" = "重新載入";
+///-----------------------------------------------------------------------------
+/// TVSettingController
+///-----------------------------------------------------------------------------
 
-"Xiq-Co-yt0.placeholder" = "搜尋名稱 / 描述";
+/* TVSettingController navigationItem title */
+"VBG-Xg-jwI.title" = "設定";
 
+/* TVSettingController tabBarItem title */
 "MEs-Af-OE9.title" = "設定";
 
+/* TVSettingController tableView row 0 cell text */
 "2mq-ng-hVT.text" = "清除暫存";
 
+/* TVSettingController tableView row 1 cell text */
 "PQf-2t-Lul.text" = "移除收藏";
-
-"VBG-Xg-jwI.title" = "設定";

@@ -1,24 +1,43 @@
+///-----------------------------------------------------------------------------
+/// TVChannelViewController
+///-----------------------------------------------------------------------------
 
-/* Class = "UITabBarItem"; title = "Channels"; ObjectID = "Lsr-eT-fQL"; */
-"Lsr-eT-fQL.title" = "Channels";
+/* TVChannelViewController navigationItem title */
+"yI7-si-ZiI.title" = "Channel";
 
-/* Class = "UINavigationItem"; title = "Favorite"; ObjectID = "Sdq-6X-PAp"; */
+/* TVChannelViewController tabBarItem title */
+"Lsr-eT-fQL.title" = "Channel";
+
+/* TVChannelViewController reloadItem title */
+"XTo-LB-MbE.title" = "Reload";
+
+/* TVChannelViewController searchBar placeholder text */
+"Bsf-Ev-CG3.placeholder" = "Search title / description";
+
+
+///-----------------------------------------------------------------------------
+/// TVFavoriteViewController
+///-----------------------------------------------------------------------------
+
+/* TVFavoriteViewController navigationItem title */
 "Sdq-6X-PAp.title" = "Favorite";
 
-/* Class = "UITabBarItem"; title = "Favorite"; ObjectID = "VPn-GO-h83"; */
+/* TVFavoriteViewController tabBarItem title */
 "VPn-GO-h83.title" = "Favorite";
 
-/* Class = "UINavigationItem"; title = "Channels"; ObjectID = "mLW-jX-ppj"; */
-"mLW-jX-ppj.title" = "Channels";
 
-"PME-KQ-l9w.title" = "Reload";
+///-----------------------------------------------------------------------------
+/// TVSettingController
+///-----------------------------------------------------------------------------
 
-"Xiq-Co-yt0.placeholder" = "Search title / description";
+/* TVSettingController navigationItem title */
+"VBG-Xg-jwI.title" = "Setting";
 
+/* TVSettingController tabBarItem title */
 "MEs-Af-OE9.title" = "Setting";
 
+/* TVSettingController tableView row 0 cell text */
 "2mq-ng-hVT.text" = "Clean Cache";
 
+/* TVSettingController tableView row 1 cell text */
 "PQf-2t-Lul.text" = "Remove Favorite";
-
-"VBG-Xg-jwI.title" = "Setting";

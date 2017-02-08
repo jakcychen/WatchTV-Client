@@ -30,6 +30,8 @@
     
 }
 
+#pragma mark - Private
+#pragma mark 清除暫存
 - (void)__cleanCache:(NSIndexPath *)indexPath
 {
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^
@@ -50,6 +52,7 @@
     });
 }
 
+#pragma 清除收藏 db
 - (void)__removeFavoriteDB:(NSIndexPath *)indexPath
 {
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^
