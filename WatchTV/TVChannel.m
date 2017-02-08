@@ -2,7 +2,6 @@
 //  Copyright (c) 2017 shinren.pan@gmail.com All rights reserved.
 //
 
-
 #import "TVChannel.h"
 
 
@@ -21,6 +20,7 @@
         return old;
     }
     
+    // 轉成 NSString
     if([old isKindOfClass:[NSNumber class]])
     {
         return [NSString stringWithFormat:@"%@", old];
@@ -36,6 +36,7 @@
         return old;
     }
     
+    // 轉成 NSString
     if([old isKindOfClass:[NSNumber class]])
     {
         return [NSString stringWithFormat:@"%@", old];

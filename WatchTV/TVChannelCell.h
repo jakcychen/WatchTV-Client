@@ -7,9 +7,8 @@
 @class TVChannel;
 @class TVChannelCell;
 
-/**
- *  TVChannelCell protocol.
- */
+
+/// TVChannelCell protocol.
 @protocol TVChannelCellDelegate <NSObject>
 
 
@@ -20,18 +19,16 @@
 @optional
 
 /**
- *  點擊收藏按鈕的 delegation method.
- *
- *  @param cell 哪個 Cell 點擊
+ 收藏按鈕點擊後的 callback.
+ 
+ @param cell 哪個 Cell 點擊了收藏按鈕.
  */
 - (void)favoriteButtonClickedInCell:(TVChannelCell *)cell;
 
 @end
 
 
-/**
- *  Channel cell.
- */
+/// Channel cell.
 @interface TVChannelCell : UITableViewCell
 
 
@@ -39,9 +36,8 @@
 /// @name Properties
 ///-----------------------------------------------------------------------------
 
-/**
- *  Delegation.
- */
+
+/// Delegation.
 @property (nonatomic, weak) UIViewController <TVChannelCellDelegate> *delegate;
 
 
@@ -50,10 +46,10 @@
 ///-----------------------------------------------------------------------------
 
 /**
- *  設置 Cell.
- *
- *  @param channel   頻道 model.
- *  @param favorited 是否收藏
+ 設置 Cell.
+ 
+ @param channel   頻道 model.
+ @param favorited 是否收藏
  */
 - (void)configureWithChannel:(TVChannel *)channel favorited:(BOOL)favorited;
 

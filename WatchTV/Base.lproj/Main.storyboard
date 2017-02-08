@@ -1,68 +1,89 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="opg-9a-cA0">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2659" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="opg-9a-cA0">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--TVChannelListController-->
-        <scene sceneID="ryQ-2Z-3zH">
+        <!--TVChannelViewController-->
+        <scene sceneID="QCA-aK-SHJ">
             <objects>
-                <tableViewController restorationIdentifier="TVChannelListController" storyboardIdentifier="TVChannelListController" id="2tR-7h-q51" userLabel="TVChannelListController" customClass="TVChannelListController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" id="pZL-Pe-XWJ">
+                <viewController restorationIdentifier="TVChannelViewController" storyboardIdentifier="TVChannelViewController" id="eN2-LP-LEb" userLabel="TVChannelViewController" customClass="TVChannelViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8CR-eU-Thg"/>
+                        <viewControllerLayoutGuide type="bottom" id="9tC-K6-DXS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RMr-CZ-Rc6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <connections>
-                            <outlet property="dataSource" destination="2tR-7h-q51" id="817-bO-y6C"/>
-                            <outlet property="delegate" destination="2tR-7h-q51" id="3cf-Fi-FiW"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Channels" id="mLW-jX-ppj"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Wnb-1T-glC">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <subviews>
+                                    <searchBar hidden="YES" contentMode="redraw" placeholder="Search title / description" translatesAutoresizingMaskIntoConstraints="NO" id="Bsf-Ev-CG3">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="eN2-LP-LEb" id="E7v-ff-hci"/>
+                                        </connections>
+                                    </searchBar>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mcy-JJ-HaU">
+                                        <rect key="frame" x="0.0" y="44" width="375" height="510"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="eN2-LP-LEb" id="TXA-VP-qXb"/>
+                                            <outlet property="delegate" destination="eN2-LP-LEb" id="Ewm-Rp-0ck"/>
+                                        </connections>
+                                    </tableView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Wnb-1T-glC" firstAttribute="top" secondItem="8CR-eU-Thg" secondAttribute="bottom" id="E5u-JL-43V"/>
+                            <constraint firstItem="Wnb-1T-glC" firstAttribute="leading" secondItem="RMr-CZ-Rc6" secondAttribute="leading" id="GiB-jY-S9J"/>
+                            <constraint firstItem="9tC-K6-DXS" firstAttribute="top" secondItem="Wnb-1T-glC" secondAttribute="bottom" id="QUk-XZ-PbJ"/>
+                            <constraint firstAttribute="trailing" secondItem="Wnb-1T-glC" secondAttribute="trailing" id="ccR-1p-H9h"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Channel" id="yI7-si-ZiI"/>
                     <connections>
-                        <outlet property="loadingItem" destination="gQA-IJ-3Zo" id="5Xn-Bg-SnD"/>
-                        <outlet property="reloadItem" destination="PME-KQ-l9w" id="7TB-UQ-EyS"/>
-                        <outlet property="searchBar" destination="Xiq-Co-yt0" id="lqE-5E-CPt"/>
-                        <segue destination="kXn-Gj-jhQ" kind="presentation" identifier="toTVPlayerViewController" id="qhe-hU-dLf"/>
+                        <outlet property="loadingItem" destination="eul-nD-E1N" id="cUf-wd-afp"/>
+                        <outlet property="reloadItem" destination="XTo-LB-MbE" id="u2G-pm-6aj"/>
+                        <outlet property="searchBar" destination="Bsf-Ev-CG3" id="bpe-FH-m2O"/>
+                        <outlet property="tableView" destination="mcy-JJ-HaU" id="ewR-wu-ccH"/>
+                        <segue destination="kXn-Gj-jhQ" kind="presentation" identifier="toTVPlayerViewController" id="dmk-QE-Bp0"/>
                     </connections>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="pQV-Hg-0xe" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <searchBar contentMode="redraw" placeholder="Search title / description" id="Xiq-Co-yt0">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                    <textInputTraits key="textInputTraits"/>
-                    <connections>
-                        <outlet property="delegate" destination="2tR-7h-q51" id="ad1-V8-ds1"/>
-                    </connections>
-                </searchBar>
-                <barButtonItem enabled="NO" style="plain" id="gQA-IJ-3Zo">
-                    <view key="customView" contentMode="scaleToFill" id="QwE-6g-T8Y">
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XhS-GT-VfE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <barButtonItem id="eul-nD-E1N">
+                    <view key="customView" contentMode="scaleToFill" id="7dJ-Sa-dgS">
                         <rect key="frame" x="339" y="12" width="20" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="3uA-TT-ZMX">
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="uW0-kJ-KPH">
                                 <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
                                 <color key="color" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="3uA-TT-ZMX" firstAttribute="centerY" secondItem="QwE-6g-T8Y" secondAttribute="centerY" id="Ovy-ff-sgT"/>
-                            <constraint firstItem="3uA-TT-ZMX" firstAttribute="centerX" secondItem="QwE-6g-T8Y" secondAttribute="centerX" id="SrO-U2-oyt"/>
+                            <constraint firstItem="uW0-kJ-KPH" firstAttribute="centerX" secondItem="7dJ-Sa-dgS" secondAttribute="centerX" id="Cf3-dG-zKc"/>
+                            <constraint firstItem="uW0-kJ-KPH" firstAttribute="centerY" secondItem="7dJ-Sa-dgS" secondAttribute="centerY" id="K5C-fO-zHn"/>
                         </constraints>
                     </view>
                 </barButtonItem>
-                <barButtonItem title="Reload" id="PME-KQ-l9w">
+                <barButtonItem title="Reload" id="XTo-LB-MbE">
                     <connections>
-                        <action selector="reloadItemClicked:" destination="2tR-7h-q51" id="Jcn-u0-eB7"/>
+                        <action selector="reloadItemClicked:" destination="eN2-LP-LEb" id="fYV-um-AYM"/>
                     </connections>
                 </barButtonItem>
             </objects>
-            <point key="canvasLocation" x="757" y="424"/>
+            <point key="canvasLocation" x="756" y="422.33883058470769"/>
         </scene>
         <!--TVSettingController-->
         <scene sceneID="EWY-IF-BEB">
@@ -73,7 +94,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <view key="tableFooterView" contentMode="scaleToFill" id="Szm-rt-QUH">
-                            <rect key="frame" x="0.0" y="120" width="375" height="0.0"/>
+                            <rect key="frame" x="0.0" y="184" width="375" height="0.0"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </view>
@@ -128,10 +149,10 @@
             </objects>
             <point key="canvasLocation" x="756" y="1942"/>
         </scene>
-        <!--TVFavoriteListController-->
+        <!--TVFavoriteViewController-->
         <scene sceneID="cw0-63-2E4">
             <objects>
-                <tableViewController restorationIdentifier="TVFavoriteListController" storyboardIdentifier="TVFavoriteListController" id="Xnp-Vo-EDf" userLabel="TVFavoriteListController" customClass="TVFavoriteListController" sceneMemberID="viewController">
+                <tableViewController restorationIdentifier="TVFavoriteViewController" storyboardIdentifier="TVFavoriteViewController" id="Xnp-Vo-EDf" userLabel="TVFavoriteViewController" customClass="TVFavoriteViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" id="9xh-sX-7O5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -177,27 +198,27 @@
             </objects>
             <point key="canvasLocation" x="1642" y="825"/>
         </scene>
-        <!--TVChannelListControllerNav-->
+        <!--TVChannelNavigationController-->
         <scene sceneID="tk5-Ih-hgX">
             <objects>
-                <navigationController id="cC7-We-0ch" userLabel="TVChannelListControllerNav" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Channels" image="Icon-list-n" id="Lsr-eT-fQL"/>
+                <navigationController restorationIdentifier="TVChannelViewNavigationController" storyboardIdentifier="TVChannelNavigationController" id="cC7-We-0ch" userLabel="TVChannelNavigationController" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Channel" image="Icon-list-n" id="Lsr-eT-fQL"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="sIX-Wy-CoV">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="2tR-7h-q51" kind="relationship" relationship="rootViewController" id="eme-FZ-3Nm"/>
+                        <segue destination="eN2-LP-LEb" kind="relationship" relationship="rootViewController" id="iBM-y2-ffa"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BhF-nP-m71" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-55" y="424"/>
         </scene>
-        <!--TVFavoriteListControllerNav-->
+        <!--TVFavoriteNavigationController-->
         <scene sceneID="GRo-Cb-Akk">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FzX-lA-fXi" userLabel="TVFavoriteListControllerNav" sceneMemberID="viewController">
+                <navigationController restorationIdentifier="TVFavoriteNavigationController" storyboardIdentifier="TVFavoriteNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="FzX-lA-fXi" userLabel="TVFavoriteNavigationController" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Favorite" image="Icon-favorite-n" id="VPn-GO-h83"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Gbk-BO-e8j">
@@ -216,7 +237,6 @@
         <!--TVSettingControllerNav-->
         <scene sceneID="Wvo-LM-hMj">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xo1-kK-5Bl" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController restorationIdentifier="TVSettingControllerNav" storyboardIdentifier="TVSettingControllerNav" automaticallyAdjustsScrollViewInsets="NO" id="LAs-45-4mb" userLabel="TVSettingControllerNav" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Setting" image="Icon-settings-n" id="MEs-Af-OE9"/>
                     <toolbarItems/>
@@ -229,6 +249,7 @@
                         <segue destination="Dn4-RG-9Qh" kind="relationship" relationship="rootViewController" id="9gn-fC-xBD"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xo1-kK-5Bl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-55" y="1942"/>
         </scene>
@@ -239,6 +260,6 @@
         <image name="Icon-settings-n" width="25" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="qhe-hU-dLf"/>
+        <segue reference="dmk-QE-Bp0"/>
     </inferredMetricsTieBreakers>
 </document>

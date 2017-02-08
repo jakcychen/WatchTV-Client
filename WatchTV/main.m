@@ -1,9 +1,5 @@
 //
-//  main.m
-//  WatchTV
-//
-//  Created by Joe@HotelityIn on 2016/5/27.
-//  Copyright © 2016年 shinrenpan. All rights reserved.
+//  Copyright (c) 2017 shinren.pan@gmail.com All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

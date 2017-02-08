@@ -5,9 +5,7 @@
 #import <UIKit/UIKit.h>
 
 
-/**
- *  設定 ViewController.
- */
+/// 設定 ViewController.
 @interface TVSettingController : UITableViewController
 
 @end

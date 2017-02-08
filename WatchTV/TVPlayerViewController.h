@@ -4,9 +4,10 @@
 
 #import <AVKit/AVKit.h>
 
-/**
- *  播放頻道的 ViewController.
- */
+@class TVChannel;
+
+
+/// 播放頻道的 ViewController.
 @interface TVPlayerViewController : AVPlayerViewController
 
 
@@ -14,9 +15,7 @@
 /// @name Properties
 ///-----------------------------------------------------------------------------
 
-/**
- *  頻道 URL string.
- */
-@property (nonatomic, copy) NSString *channelURL;
+/// 播放的頻道.
+@property (nonatomic, weak) TVChannel *channel;
 
 @end
